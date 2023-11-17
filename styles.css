@@ -23,13 +23,15 @@
     }
 
     .portfolio {
-        @apply w-10/12 lg:w-1/2 mx-auto grid grid-cols-1 gap-4 lg:grid-cols-3
+        @apply w-10/12 lg:w-1/2 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8
     }
 
     .card {
         @apply 
-        bg-blue-600/20 my-2 rounded-xl
-        relative
-        border-2 border-sky-800
+        bg-gray-950/20 my-2 rounded-xl
+    }
+
+    .card img {
+        @apply rounded-xl
     }
 }

@@ -1,5 +1,5 @@
 body {
-    font-family: 'Source Serif 4';
+    font-family: 'Poppins';
 }
 
 .border-gradient {
@@ -9,4 +9,23 @@ body {
 
 .font-poppins {
     font-family: 'Poppins';
+}
+
+.font-ss4 {
+    font-family: 'Source Serif 4';
+
+}
+
+.glow-effect {
+    box-shadow: 0 0 10px rgba(229, 135, 214, 0.8);
+    /* Adjust the color and spread as needed */
+    animation: glow 1s ease-in-out infinite alternate;
+    /* Adjust the animation duration and timing function */
+}
+
+@keyframes glow {
+    to {
+        box-shadow: 0 0 20px rgba(216, 31, 194, 0.8);
+        /* Adjust the color and spread as needed */
+    }
 }
