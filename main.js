@@ -17,3 +17,15 @@ myPhoto.addEventListener('mouseover', () => {
 myPhoto.addEventListener('mouseleave', () => {
     myPhoto.setAttribute('src', 'public/photo-me0.png');
 })
+
+
+// Add smooth scrolling behavior when clicking on navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});

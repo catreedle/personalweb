@@ -21,17 +21,15 @@
   <div class="container bg-white">
     <section class="flex justify-between">
       <h1 class="font-poppins">Purnamadev.</h1>
-      <div class="flex flex-col items-center cursor-pointer">
+      <div class="flex flex-col items-center cursor-pointer lg:hidden">
         <div class="w-8 h-0.5 bg-black mb-3"></div>
         <div class="w-8 h-0.5 bg-black mb-3"></div>
       </div>
 
-      <nav class="hidden">
-        <ul>
-          <li>Portfolio</li>
-          <li>Blog</li>
-          <li>Contact</li>
-        </ul>
+      <nav class="lg:block hidden flex">
+        <a href="#one" class="p-4">Portfolio</a>
+        <a href="#two" class="p-4">Blog</a>
+        <a href="#three" class="p-4">Contact</a>
       </nav>
     </section>
     <section class="profile font-ss4 size text-2xl">
@@ -40,9 +38,9 @@
       <p>I am a <span id="element"></span></p>
     </section>
 
-    <section id="one">
-      <h2 class="font-poppins">Portfolio</h2>
-      <section class="portfolio">
+    <section id="one" class="py-8">
+      <h2 class="font-poppins text-center text-2xl font-bold">Portfolio</h2>
+      <section class="portfolio py-8">
         <div class="card glow-effect">
           <a href="https://w7g22v.csb.app/" target="_blank"><img src="/portfolio0.png" alt="my-portfolio0"
               class="w-full h-full object-cover"></a>
@@ -54,21 +52,44 @@
           <a href="https://q5kpyl.csb.app/" target="_blank"><img src="/portfolio3.png" alt="my-portfolio3"></a>
         </div>
         <div class="card glow-effect flex justify-center items-center">
-          <a href="https://p3qwps.csb.app/" target="_blank"><img src="/portfolio2.png" alt="my-portfolio2" class="w-full h-full object-cover"></a>
+          <a href="https://p3qwps.csb.app/" target="_blank"><img src="/portfolio2.png" alt="my-portfolio2"
+              class="w-full h-full object-cover"></a>
         </div>
       </section>
     </section>
 
     <section id="two">
-      <h2 class="font-poppins">Blog</h2>
-      <section class="blog">
-        <div>
-          <h3>Title</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nemo enim iusto rerum doloribus magnam.</p>
+      <h2 class="font-poppins text-center text-2xl font-bold">Blog</h2>
+      <section class="blog py-8">
+        <div class="py-5">
+          <h3 class="font-ss4 text-xl">Menulis sebagai Meditasi</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, pariatur ducimus impedit ratione ipsa,
+            eligendi assumenda quia nam quo voluptatem error natus reiciendis porro nihil...</p>
+          <button>Read more</button>
         </div>
-        <div></div>
-        <div></div>
+        <div class="py-5">
+          <h3 class="font-ss4 text-xl">Loop and Share</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium error illum aliquam harum officia
+            maiores vero tempore quis suscipit soluta voluptatibus nihil, animi fugit dicta ex est distinctio, odio
+            eligendi...</p>
+          <button>Read more</button>
+        </div>
+        <div class="py-5">
+          <h3 class="font-ss4 text-xl">Bitmap</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, non. Totam praesentium recusandae
+            itaque veniam at inventore eius soluta ab quae! Harum odit non sit culpa enim facilis consequuntur fugiat
+            magni maxime alias...</p>
+          <button>Read more</button>
+        </div>
       </section>
+    </section>
+
+    <section id="three">
+      <h2 class="font-poppins text-center text-2xl font-bold">Contact</h2>
+      <section class="blog py-8">
+
+      </section>
+
     </section>
 
 

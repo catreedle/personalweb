@@ -440,6 +440,22 @@ body {
   justify-content: center;
 }
 
+button {
+  border-radius: 9999px;
+  background-color: rgba(229, 135, 214, 0.8);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+button:hover {
+  background-color: rgba(216, 31, 194, 0.8);
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -580,9 +596,8 @@ body {
   width: 10rem;
   border-radius: 9999px;
   border-width: 4px;
-  --tw-border-opacity: 1;
-  border-left-color: rgb(192 132 252 / var(--tw-border-opacity));
-  border-right-color: rgb(192 132 252 / var(--tw-border-opacity));
+  border-left-color: rgba(229, 135, 214, 0.8);
+  border-right-color: rgba(229, 135, 214, 0.8);
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -698,14 +713,27 @@ body {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-yellow-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 249 195 / var(--tw-bg-opacity));
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-2xl {
@@ -713,8 +741,25 @@ body {
   line-height: 2rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
 @media (min-width: 1024px) {
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:hidden {
+    display: none;
   }
 }
