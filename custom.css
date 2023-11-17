@@ -1,0 +1,12 @@
+body {
+    font-family: 'Source Serif 4';
+}
+
+.border-gradient {
+    border-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red) 1;
+    border-image-slice: 1;
+}
+
+.font-poppins {
+    font-family: 'Poppins';
+}
