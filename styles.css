@@ -24,7 +24,7 @@
     }
 
     .profile {
-        @apply flex flex-col items-center
+        @apply flex flex-col items-center relative
     }
 
     .portfolio {

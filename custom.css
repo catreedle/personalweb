@@ -49,18 +49,28 @@ body {
 
 /* trying to implement hello text bubble on hover */
 #say-hello {
-    display: none;
+    position: absolute;
+    top: 10%; /* Position below the trigger element */
+    right: 54%;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-#my-photo:hover #say-hello {
-    display: block;
+    transition: opacity 0.5s ease; /* Optional: Add a smooth transition effect */
+  }
+  
+  #my_photo:hover + #say-hello,
+  #say-hello:hover {
     visibility: visible;
     opacity: 1;
-}
+  }
 
 .custom-text-shadow {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
+
+@media only screen and (max-width: 600px) {
+    #say-hello {
+      /* New position for mobile */
+      top: 10%;
+      right: 60%;
+    }
+  }

@@ -16,16 +16,17 @@ const typed1 = new Typed('#element1', {
 
 // hover photo effect
 const myPhoto = document.getElementById("my-photo");
-// const sayHello = document.getElementById("say-hello");
+const sayHello = document.getElementById("say-hello");
 
 myPhoto.addEventListener('mouseover', () => {
   myPhoto.setAttribute('src', 'profile/photo-me1.png');
-  // sayHello.style.display = "block";
+  sayHello.style.visibility = "visible";
+  sayHello.style.opacity = 1;
 })
 
 myPhoto.addEventListener('mouseleave', () => {
   myPhoto.setAttribute('src', 'profile/photo-me0.png');
-  // sayHello.style.display = "none";
+  sayHello.style.visibility = "hidden";
 })
 
 
