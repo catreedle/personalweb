@@ -14,6 +14,7 @@
     "vite": "^5.0.0"
   },
   "dependencies": {
+    "canvas-confetti": "^1.9.1",
     "concurrently": "^8.2.2",
     "typed.js": "^2.1.0"
   }
