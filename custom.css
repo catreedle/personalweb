@@ -2,7 +2,7 @@ body {
     font-family: 'Poppins';
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5)), url('/public/background/ubur-ubur0.jpg') center/cover;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5)), url('/background/ubur-ubur0.jpg') center/cover;
     /* overflow:scroll; */
     height: 100vh;
     transition: background 1s ease;
