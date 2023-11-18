@@ -5,6 +5,7 @@
 @layer base {
     body {
         @apply flex min-h-screen justify-center
+        bg-cover bg-center h-screen
     }
 
     button {

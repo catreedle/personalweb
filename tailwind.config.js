@@ -9,6 +9,9 @@ export default {
       colors: {
         'purple-pink': 'rgba(229, 135, 214, 0.8)',
         'purple-bold': 'rgba(216, 31, 194, 0.8)'
+      },
+      width: {
+        '100': '10rem'
       }
     },
   },

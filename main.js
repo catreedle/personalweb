@@ -1,7 +1,7 @@
 import Typed from 'typed.js';
 
 const typed = new Typed('#element', {
-  strings: ['full stack developer', 'passionate learner', 'part time problem solver'],
+  strings: ['full stack developer.', 'passionate learner.', 'part time problem solver.'],
   typeSpeed: 50,
   loop: true
 });
@@ -15,13 +15,16 @@ const typed1 = new Typed('#element1', {
 
 // hover photo effect
 const myPhoto = document.getElementById("my-photo");
+// const sayHello = document.getElementById("say-hello");
 
 myPhoto.addEventListener('mouseover', () => {
-    myPhoto.setAttribute('src', 'public/photo-me1.png');
+    myPhoto.setAttribute('src', 'profile/photo-me1.png');
+    // sayHello.style.display = "block";
 })
 
 myPhoto.addEventListener('mouseleave', () => {
-    myPhoto.setAttribute('src', 'public/photo-me0.png');
+    myPhoto.setAttribute('src', 'profile/photo-me0.png');
+    // sayHello.style.display = "none";
 })
 
 
