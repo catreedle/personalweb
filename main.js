@@ -6,6 +6,12 @@ const typed = new Typed('#element', {
   loop: true
 });
 
+const typed1 = new Typed('#element1', {
+  strings: ['social media!', 'Twitter', 'Instagram', 'Discord', 'LinkedIn', 'Github'],
+  typeSpeed: 50,
+  loop: true
+});
+
 
 // hover photo effect
 const myPhoto = document.getElementById("my-photo");

@@ -29,3 +29,9 @@ body {
         /* Adjust the color and spread as needed */
     }
 }
+
+.typed-container {
+    width: 400px;
+    margin: 0 auto; /* Center the container on the page */
+    padding: 20px;
+  }

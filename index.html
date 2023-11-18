@@ -35,7 +35,9 @@
     <section class="profile font-ss4 size text-2xl">
       <img src="/photo-me0.png" alt="my-photo" class="my-photo" id="my-photo">
       <p>My name is Purnama Sidi Rahayu</p>
-      <p>I am a <span id="element"></span></p>
+      <div class="typed-container">
+        <p>I am a <span id="element"></span></p>
+      </div>
     </section>
 
     <section id="one" class="py-8">
@@ -61,20 +63,21 @@
     <section id="two">
       <h2 class="font-poppins text-center text-2xl font-bold">Blog</h2>
       <section class="blog py-8">
-        <div class="py-5">
+        <div class="py-5 blog-content">
           <h3 class="font-ss4 text-xl">Menulis sebagai Meditasi</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, pariatur ducimus impedit ratione ipsa,
             eligendi assumenda quia nam quo voluptatem error natus reiciendis porro nihil...</p>
           <button>Read more</button>
         </div>
-        <div class="py-5">
+        <div class="py-5 blog-content">
           <h3 class="font-ss4 text-xl">Loop and Share</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium error illum aliquam harum officia
             maiores vero tempore quis suscipit soluta voluptatibus nihil, animi fugit dicta ex est distinctio, odio
             eligendi...</p>
           <button>Read more</button>
         </div>
-        <div class="py-5">
+        <br>
+        <div class="py-5 blog-content">
           <h3 class="font-ss4 text-xl">Bitmap</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, non. Totam praesentium recusandae
             itaque veniam at inventore eius soluta ab quae! Harum odit non sit culpa enim facilis consequuntur fugiat
@@ -86,9 +89,25 @@
 
     <section id="three">
       <h2 class="font-poppins text-center text-2xl font-bold">Contact</h2>
-      <section class="blog py-8">
-
+      <section class="blog py-8 flex justify-center flex-col items-center">
+        <textarea name="message" id="message" cols="45" rows="5" placeholder="Write to me"
+          class="p-2 border border-purple-pink border-4"></textarea>
+        <button class="w-80 my-8">Send</button>
       </section>
+
+      <section id="social-media" class="flex flex-col lg:flex-row items-center justify-center">
+        <div class="typed-container">
+          <h3 class="font-ss4 text-xl py-8 text-center lg:text-left">Let's connect on <span id="element1" class="text-left text-purple-bold"></span></h3>
+        </div>
+        <div id="icons" class="flex flex-row gap-6">
+          <img class="w-8 h-8 shadow hover:shadow-purple-bold" src="icons/twitterx.png" alt="icon-twitter">
+          <img class="w-8 h-8 shadow hover:shadow-purple-bold" src="icons/instagram.png" alt="icon-instagram">
+          <img class="w-8 h-8 shadow hover:shadow-purple-bold" src="icons/discord.png" alt="icon-discord">
+          <img class="w-8 h-8 shadow hover:shadow-purple-bold" src="icons/linkedin.png" alt="icon-linkedin">
+          <img class="w-8 h-8 shadow hover:shadow-purple-bold" src="icons/github.png" alt="icon-github">
+        </div>
+      </section>
+
 
     </section>
 

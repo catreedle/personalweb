@@ -38,4 +38,9 @@
     .card img {
         @apply rounded-xl
     }
+
+    .blog-content {
+        @apply border-b border-black
+
+    }
 }
