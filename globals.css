@@ -766,6 +766,11 @@ button:hover {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -787,6 +792,23 @@ button:hover {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
 }
 
 .text-left {
@@ -813,6 +835,10 @@ button:hover {
 
 .text-purple-bold {
   color: rgba(216, 31, 194, 0.8);
+}
+
+.text-purple-pink {
+  color: rgba(229, 135, 214, 0.8);
 }
 
 .shadow {
