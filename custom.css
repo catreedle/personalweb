@@ -5,6 +5,7 @@ body {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5)), url('/background/ubur-ubur0.jpg') center/cover;
     /* overflow:scroll; */
     height: 100vh;
+    background-attachment: fixed;
     transition: background 1s ease;
 }
 
