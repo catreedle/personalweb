@@ -34,6 +34,11 @@ body::before {
 	padding: 10px 20px;
 	width: 100%;
 	position: fixed;
+	z-index: 10;
+}
+
+.my-photo:hover {
+	object-position: 0 80%;
 }
 
 .border-gradient {
