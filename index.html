@@ -1,126 +1,245 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="globals.css" />
+		<link rel="stylesheet" href="custom.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Serif+4:opsz,wght@8..60,600&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Purnamadev</title>
+	</head>
 
-  <link rel="stylesheet" href="globals.css">
-  <link rel="stylesheet" href="custom.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Serif+4:opsz,wght@8..60,600&display=swap"
-    rel="stylesheet">
-  <title>Purnamadev</title>
-</head>
+	<body>
+		<div class="container">
+			<section class="flex justify-between">
+				<h1 class="font-poppins">Purnamadev.</h1>
+				<div
+					class="flex flex-col items-center cursor-pointer lg:hidden"
+				>
+					<div class="w-8 h-0.5 bg-black mb-3"></div>
+					<div class="w-8 h-0.5 bg-black mb-3"></div>
+				</div>
 
-<body>
-  <div class="container">
-    <section class="flex justify-between">
-      <h1 class="font-poppins">Purnamadev.</h1>
-      <div class="flex flex-col items-center cursor-pointer lg:hidden">
-        <div class="w-8 h-0.5 bg-black mb-3"></div>
-        <div class="w-8 h-0.5 bg-black mb-3"></div>
-      </div>
+				<nav class="lg:block hidden flex">
+					<a href="#one" class="p-4 hover:font-extrabold"
+						>Portfolio</a
+					>
+					<a href="#two" class="p-4 hover:font-extrabold">Articles</a>
+					<a href="#three" class="p-4 hover:font-extrabold"
+						>Contact</a
+					>
+				</nav>
+			</section>
+			<section class="profile font-ss4 size text-2xl">
+				<img
+					src="profile/photo-me0.png"
+					alt="my-photo"
+					class="my-photo"
+					id="my-photo"
+				/>
+				<img
+					id="say-hello"
+					src="hello.png"
+					alt="hello-text-bubble"
+					class="w-100 relative top-28 right-28 rotate-340 -z-10"
+				/>
+				<p>My name is Purnama Sidi Rahayu</p>
+				<div class="typed-container">
+					<p>
+						I am a
+						<span class="text-blue-700" id="element"></span>
+					</p>
+				</div>
+				<p class="font-poppins text-sm text-white custom-text-shadow">
+					Pssst.. Catch the butterfly!
+				</p>
+				<img
+					id="flying-butterfly"
+					src="butterfly.gif"
+					alt="flying-butterfly"
+					class="w-20 h-20 relative m-0 p-0 float-left"
+				/>
+			</section>
 
-      <nav class="lg:block hidden flex">
-        <a href="#one" class="p-4 hover:font-extrabold">Portfolio</a>
-        <a href="#two" class="p-4 hover:font-extrabold">Articles</a>
-        <a href="#three" class="p-4 hover:font-extrabold">Contact</a>
-      </nav>
-    </section>
-    <section class="profile font-ss4 size text-2xl">
-      
-      <img src="profile/photo-me0.png" alt="my-photo" class="my-photo" id="my-photo">
-      <img id="say-hello" src="hello.png" alt="hello-text-bubble" class="w-100 relative top-28 right-28 rotate-340 -z-10">
-      <p>My name is Purnama Sidi Rahayu</p>
-      <div class="typed-container">
-        <p>I am a <span class="text-purple-bold" id="element"></span></p>
-      </div>
-      <p class="font-poppins text-sm text-purple-pink custom-text-shadow">Pssst.. Catch the butterfly!</p>
-      <img id="flying-butterfly" src="butterfly.gif" alt="flying-butterfly" class="w-20 h-20 relative m-0 p-0 float-left">
+			<section id="one" class="py-8">
+				<h2 class="font-poppins text-center text-2xl font-bold">
+					Portfolio
+				</h2>
+				<section class="portfolio py-8">
+					<div class="card glow-effect">
+						<a
+							href="https://frontend-quiz-catreedle.vercel.app/"
+							target="_blank"
+							><img
+								src="portfolio/portfolio0.png"
+								alt="my-portfolio0"
+								class="w-full h-full object-cover"
+						/></a>
+					</div>
+					<div
+						class="card glow-effect lg:col-span-2 bg-white flex items-center"
+					>
+						<a
+							href="https://github.com/catreedle/enigma-laundry"
+							target="_blank"
+							><img
+								src="portfolio/portfolio1.png"
+								alt="my-portfolio1"
+						/></a>
+					</div>
+					<div class="card glow-effect col-span-1 lg:col-span-2">
+						<a
+							href="https://moments-mxkp.onrender.com/"
+							target="_blank"
+							><img
+								src="portfolio/portfolio3.png"
+								alt="my-portfolio3"
+						/></a>
+					</div>
+					<div
+						class="card glow-effect flex justify-center items-center bg-[#18171f]"
+					>
+						<a
+							href="https://password-generator-catreedle.vercel.app/"
+							target="_blank"
+							><img
+								src="portfolio/portfolio2.png"
+								alt="my-portfolio2"
+								class="w-full h-full object-cover"
+						/></a>
+					</div>
+				</section>
+			</section>
 
-    </section>
+			<section id="two">
+				<h2 class="font-poppins text-center text-2xl font-bold">
+					Articles
+				</h2>
+				<section class="blog py-8">
+					<div class="py-5 blog-content">
+						<h3 class="font-ss4 text-xl">
+							Mengenal Konsep Mutability dalam Pemrograman Python
+						</h3>
+						<p>
+							Mutability berarti kemampuan untuk berubah. Istilah
+							ini berasal dari kata mutate, yang artinya mutasi.
+							Dalam pemrograman, tipe data dapat…
+						</p>
+						<button>
+							<a
+								target="_blank"
+								href="https://medium.com/@purnamasrahayu/mengenal-konsep-mutability-dalam-pemrograman-python-60c37aaf7e85"
+								>Read more</a
+							>
+						</button>
+					</div>
+					<div class="py-5 blog-content">
+						<h3 class="font-ss4 text-xl">Loop and Share</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Praesentium error illum aliquam harum officia
+							maiores vero tempore quis suscipit soluta
+							voluptatibus nihil, animi fugit dicta ex est
+							distinctio, odio eligendi...
+						</p>
+						<button>Read more</button>
+					</div>
+					<br />
+					<div class="py-5 blog-content">
+						<h3 class="font-ss4 text-xl">Bitmap</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Molestiae, non. Totam praesentium recusandae
+							itaque veniam at inventore eius soluta ab quae!
+							Harum odit non sit culpa enim facilis consequuntur
+							fugiat magni maxime alias...
+						</p>
+						<button>Read more</button>
+					</div>
+				</section>
+			</section>
 
-    
-    <section id="one" class="py-8">
-      <h2 class="font-poppins text-center text-2xl font-bold">Portfolio</h2>
-      <section class="portfolio py-8">
-        <div class="card glow-effect">
-          <a href="https://w7g22v.csb.app/" target="_blank"><img src="portfolio/portfolio0.png" alt="my-portfolio0"
-              class="w-full h-full object-cover"></a>
-        </div>
-        <div class="card glow-effect lg:col-span-2">
-          <a href="https://6ys3xj.csb.app/" target="_blank"><img src="portfolio/portfolio1.png" alt="my-portfolio1"></a>
-        </div>
-        <div class="card glow-effect col-span-1 lg:col-span-2">
-          <a href="https://toggnjog-album.vercel.app/" target="_blank"><img src="portfolio/portfolio3.png" alt="my-portfolio3"></a>
-        </div>
-        <div class="card glow-effect flex justify-center items-center">
-          <a href="https://flowerize.vercel.app/" target="_blank"><img src="portfolio/portfolio2.png" alt="my-portfolio2"
-              class="w-full h-full object-cover"></a>
-        </div>
-      </section>
-    </section>
+			<section id="three">
+				<h2 class="font-poppins text-center text-2xl font-bold">
+					Contact
+				</h2>
+				<section
+					class="blog py-8 flex justify-center flex-col items-center"
+				>
+					<textarea
+						name="message"
+						id="message"
+						cols="45"
+						rows="5"
+						placeholder="Write to me"
+						class="p-2 border-blue-400 border-4"
+					></textarea>
+					<button class="w-80 my-8">Send</button>
+				</section>
 
-    <section id="two">
-      <h2 class="font-poppins text-center text-2xl font-bold">Articles</h2>
-      <section class="blog py-8">
-        <div class="py-5 blog-content">
-          <h3 class="font-ss4 text-xl">Mengenal Konsep Mutability dalam Pemrograman Python</h3>
-          <p>Mutability berarti kemampuan untuk berubah. Istilah ini berasal dari kata mutate, yang artinya mutasi. Dalam pemrograman, tipe data dapat…</p>
-          <button><a target="_blank" href="https://medium.com/@purnamasrahayu/mengenal-konsep-mutability-dalam-pemrograman-python-60c37aaf7e85">Read more</a></button>
-        </div>
-        <div class="py-5 blog-content">
-          <h3 class="font-ss4 text-xl">Loop and Share</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium error illum aliquam harum officia
-            maiores vero tempore quis suscipit soluta voluptatibus nihil, animi fugit dicta ex est distinctio, odio
-            eligendi...</p>
-          <button>Read more</button>
-        </div>
-        <br>
-        <div class="py-5 blog-content">
-          <h3 class="font-ss4 text-xl">Bitmap</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, non. Totam praesentium recusandae
-            itaque veniam at inventore eius soluta ab quae! Harum odit non sit culpa enim facilis consequuntur fugiat
-            magni maxime alias...</p>
-          <button>Read more</button>
-        </div>
-      </section>
-    </section>
+				<section
+					id="social-media"
+					class="flex flex-col lg:flex-row items-center justify-center"
+				>
+					<div class="typed-container">
+						<h3
+							class="font-ss4 text-xl py-8 text-center lg:text-left"
+						>
+							Let's connect on
+							<span
+								id="element1"
+								class="text-left text-blue-700"
+							></span>
+						</h3>
+					</div>
+					<div id="icons" class="flex flex-row gap-6">
+						<img
+							class="w-8 h-8 shadow hover:shadow-blue-700"
+							src="icons/discord.png"
+							alt="icon-discord"
+						/>
+						<a href="https://www.linkedin.com/in/purnamasrahayu/">
+							<img
+								class="w-8 h-8 shadow hover:shadow-blue-700"
+								src="icons/linkedin.png"
+								alt="icon-linkedin"
+							/>
+						</a>
+						<a href="https://github.com/catreedle"
+							><img
+								class="w-8 h-8 shadow hover:shadow-blue-700"
+								src="icons/github.png"
+								alt="icon-github"
+						/></a>
+					</div>
+				</section>
+			</section>
 
-    <section id="three">
-      <h2 class="font-poppins text-center text-2xl font-bold">Contact</h2>
-      <section class="blog py-8 flex justify-center flex-col items-center">
-        <textarea name="message" id="message" cols="45" rows="5" placeholder="Write to me"
-          class="p-2 border border-purple-pink border-4"></textarea>
-        <button class="w-80 my-8">Send</button>
-      </section>
-
-      <section id="social-media" class="flex flex-col lg:flex-row items-center justify-center">
-        <div class="typed-container">
-          <h3 class="font-ss4 text-xl py-8 text-center lg:text-left">Let's connect on <span id="element1" class="text-left text-purple-bold"></span></h3>
-        </div>
-        <div id="icons" class="flex flex-row gap-6">
-          <img class="w-8 h-8 shadow hover:shadow-purple-bold" src="icons/twitterx.png" alt="icon-twitter">
-          <img class="w-8 h-8 shadow hover:shadow-purple-bold" src="icons/instagram.png" alt="icon-instagram">
-          <img class="w-8 h-8 shadow hover:shadow-purple-bold" src="icons/discord.png" alt="icon-discord">
-          <img class="w-8 h-8 shadow hover:shadow-purple-bold" src="icons/linkedin.png" alt="icon-linkedin">
-          <img class="w-8 h-8 shadow hover:shadow-purple-bold" src="icons/github.png" alt="icon-github">
-        </div>
-      </section>
-    </section>
-
-    <footer class="flex justify-center">
-      <p class="font-ss4 pt-8 pb-6 text-purple-pink">🌸 2023 - Purnama S Rahayu - for <a href="https://www.devscale.id/"><strong>Devscale</strong></a> - <a target="_blank" href="https://icons8.com/icon/32292/instagram">Icons</a> by <a target="_blank" href="https://icons8.com">Icons8</a> 🌸 </p>
-    </footer>
-
-
-  </div>
-  <script type="module" src="main.js"></script>
-</body>
-
+			<footer class="flex justify-center">
+				<p class="font-ss4 pt-8 pb-6 text-blue-700">
+					💠 2023 - Purnama S Rahayu - for
+					<a href="https://www.devscale.id/"
+						><strong>Devscale</strong></a
+					>
+					-
+					<a
+						target="_blank"
+						href="https://icons8.com/icon/32292/instagram"
+						>Icons</a
+					>
+					by
+					<a target="_blank" href="https://icons8.com">Icons8</a> 💠
+				</p>
+			</footer>
+		</div>
+		<script type="module" src="main.js"></script>
+	</body>
 </html>

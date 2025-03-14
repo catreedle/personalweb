@@ -8,7 +8,7 @@ const typed = new Typed('#element', {
 });
 
 const typed1 = new Typed('#element1', {
-  strings: ['social media!', 'Twitter', 'Instagram', 'Discord', 'LinkedIn', 'Github'],
+  strings: ['social media!', 'Discord', 'LinkedIn', 'Github'],
   typeSpeed: 50,
   loop: true
 });
