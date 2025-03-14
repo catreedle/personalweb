@@ -17,28 +17,33 @@
 		<title>Purnamadev</title>
 	</head>
 
-	<body>
-		<div class="container">
-			<section class="flex justify-between">
-				<h1 class="font-poppins">Purnamadev.</h1>
-				<div
-					class="flex flex-col items-center cursor-pointer lg:hidden"
-				>
-					<div class="w-8 h-0.5 bg-black mb-3"></div>
-					<div class="w-8 h-0.5 bg-black mb-3"></div>
-				</div>
+	<body id="top">
+		<section class="flex justify-between navbar">
+			<a href="#top"
+				><h1 class="font-poppins lg:text-2xl text-white">
+					Purnamadev.
+				</h1></a
+			>
+			<div class="flex flex-col items-center cursor-pointer lg:hidden">
+				<div class="w-8 h-0.5 bg-black mb-3"></div>
+				<div class="w-8 h-0.5 bg-black mb-3"></div>
+			</div>
 
-				<nav class="lg:block hidden flex">
-					<a href="#one" class="p-4 hover:font-extrabold"
-						>Portfolio</a
-					>
-					<a href="#two" class="p-4 hover:font-extrabold">Articles</a>
-					<a href="#three" class="p-4 hover:font-extrabold"
-						>Contact</a
-					>
-				</nav>
-			</section>
-			<section class="profile font-ss4 size text-2xl justify-center">
+			<nav class="lg:block hidden flex text-white lg:text-xl">
+				<a href="#about" class="p-4 hover:font-extrabold">About</a>
+				<a href="#portfolio" class="p-4 hover:font-extrabold"
+					>Portfolio</a
+				>
+				<a href="#articles" class="p-4 hover:font-extrabold"
+					>Articles</a
+				>
+				<a href="#contact" class="p-4 hover:font-extrabold">Contact</a>
+			</nav>
+		</section>
+		<div class="container">
+			<section
+				class="profile font-ss4 size text-2xl justify-center flex flex-col gap-10 h-screen"
+			>
 				<img
 					src="profile/photo-me0.png"
 					alt="my-photo"
@@ -51,26 +56,75 @@
 					alt="hello-text-bubble"
 					class="w-100 relative top-28 right-28 rotate-340 -z-10"
 				/>
-				<p>My name is Purnama Sidi Rahayu</p>
-				<div class="typed-container">
+				<p class="lg:text-7xl">My name is Purnama Sidi Rahayu</p>
+				<div
+					class="typed-container lg:text-5xl pl-14 lg:pl-64 font-medium"
+				>
 					<p>
 						I am a
 						<span class="text-blue-700" id="element"></span>
 					</p>
 				</div>
-				<p class="font-poppins text-sm text-white custom-text-shadow">
-					Pssst.. Catch the butterfly!
-				</p>
 				<img
 					id="flying-butterfly"
 					src="butterfly.gif"
 					alt="flying-butterfly"
 					class="w-20 h-20 relative m-0 p-0 float-left"
 				/>
+				<p
+					class="font-poppins text-white custom-text-shadow text-sm lg:text-xl"
+				>
+					<i>Catch the butterfly for surprise!</i>
+				</p>
 			</section>
 
-			<section id="one" class="py-8">
-				<h2 class="font-poppins text-center text-2xl font-bold">
+			<section id="about" class="py-8 flex flex-col gap-10">
+				<h2
+					class="font-poppins text-center text-white text-2xl lg:text-4xl font-bold"
+				>
+					About Me
+				</h2>
+				<section
+					class="p-10 lg:p-24 lg:text-xl bg-[#d0e1f9] text-justify"
+				>
+					<p>
+						One more person lured into programming. Too stubborn to
+						quit, too confused to call it a passion.
+					</p>
+					<br />
+					<p>
+						Three years in the industry, still a junior developer—if
+						nothing else, I’m consistent. But hey, I’ve picked up a
+						thing or two along the way. Here’s to making better
+						choices this time around.
+					</p>
+					<br />
+					<p>
+						I work with JavaScript, React, and whatever else the job
+						demands, and I’m currently brushing up on my knowledge
+						through OSSU’s computer science curriculum (because my
+						college plans didn’t go as planned).
+					</p>
+					<br />
+					<p>
+						I love collaboration. Nothing fuels me like the shared
+						panic of a collaborative project. I’ve dabbled in open
+						source, built some things I’m proud of, and broken some
+						things I'm not.
+					</p>
+					<br />
+					<p>
+						Now, I’m looking to make better choices, and build
+						better things.
+						<i>PS: Currently accepting niche recommendations.</i>
+					</p>
+				</section>
+			</section>
+
+			<section id="portfolio" class="py-8 flex flex-col gap-5">
+				<h2
+					class="font-poppins text-center text-white text-2xl lg:text-4xl font-bold"
+				>
 					Portfolio
 				</h2>
 				<section class="portfolio py-8">
@@ -93,6 +147,7 @@
 							><img
 								src="portfolio/portfolio1.png"
 								alt="my-portfolio1"
+								class=""
 						/></a>
 					</div>
 					<div class="card glow-effect col-span-1 lg:col-span-2">
@@ -102,6 +157,7 @@
 							><img
 								src="portfolio/portfolio3.png"
 								alt="my-portfolio3"
+								class=""
 						/></a>
 					</div>
 					<div
@@ -119,16 +175,18 @@
 				</section>
 			</section>
 
-			<section id="two">
-				<h2 class="font-poppins text-center text-2xl font-bold">
+			<section id="articles">
+				<h2
+					class="font-poppins text-center text-white text-2xl lg:text-4xl font-bold"
+				>
 					Articles
 				</h2>
-				<section class="blog py-8">
+				<section class="blog py-8 px-10 lg:px-20">
 					<div class="py-5 blog-content">
-						<h3 class="font-ss4 text-xl">
+						<h3 class="font-ss4 text-xl pb-5">
 							Mengenal Konsep Mutability dalam Pemrograman Python
 						</h3>
-						<p>
+						<p class="pb-5">
 							Mutability berarti kemampuan untuk berubah. Istilah
 							ini berasal dari kata mutate, yang artinya mutasi.
 							Dalam pemrograman, tipe data dapat…
@@ -167,8 +225,10 @@
 				</section>
 			</section>
 
-			<section id="three">
-				<h2 class="font-poppins text-center text-2xl font-bold">
+			<section id="contact" class="lg:px-20 px-10">
+				<h2
+					class="font-poppins text-center text-white text-2xl lg:text-4xl font-bold"
+				>
 					Contact
 				</h2>
 				<form
@@ -178,13 +238,13 @@
 					<textarea
 						name="message"
 						id="message"
-						cols="45"
-						rows="5"
 						placeholder="Write to me"
 						class="p-2 border-blue-400 border-4"
 						required
 					></textarea>
-					<button class="w-80 my-8 bg-blue-400" type="submit">Send</button>
+					<button class="w-80 my-8 bg-blue-400" type="submit">
+						Send
+					</button>
 				</form>
 
 				<section
@@ -227,11 +287,7 @@
 
 			<footer class="flex justify-center">
 				<p class="font-ss4 pt-8 pb-6 text-blue-700">
-					💠 2023 - Purnama S Rahayu - for
-					<a href="https://www.devscale.id/"
-						><strong>Devscale</strong></a
-					>
-					-
+					💠 2025 - Purnama S Rahayu -
 					<a
 						target="_blank"
 						href="https://icons8.com/icon/32292/instagram"

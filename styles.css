@@ -3,45 +3,45 @@
 @tailwind utilities;
 
 @layer base {
-    body {
-        @apply flex min-h-screen justify-center
+	body {
+		@apply flex min-h-screen justify-center
         bg-cover bg-center h-screen
-    }
+	}
 
-    button {
-        @apply bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full
-    }
+	button {
+		@apply bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full;
+	}
 }
 @layer components {
-    .my-photo {
-        @apply w-40 h-40 rounded-full m-4
+	.my-photo {
+		@apply w-40 h-40 lg:w-60 lg:h-60 rounded-full m-4
         border-x-blue-400 border-4
         hover:scale-110 transition-transform
-    }
+	}
 
-    .container {
-        @apply my-8
-    }
+	.container {
+		@apply my-8
+	}
 
-    .profile {
-        @apply flex flex-col items-center relative
-    }
+	.profile {
+		@apply flex flex-col items-center relative
+	}
 
-    .portfolio {
-        @apply w-10/12 lg:w-1/2 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8
-    }
+	.portfolio {
+		@apply w-10/12 lg:w-[75%] lg:h-auto mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8;
+	}
 
-    .card {
-        @apply 
-        bg-gray-950/20 my-2 rounded-xl
-    }
+	.card {
+		@apply 
+		bg-gray-950/20 my-2 rounded-xl
+	}
 
-    .card img {
-        @apply rounded-xl
-    }
+	.card img {
+		@apply rounded-xl
+	}
 
-    .blog-content {
-        @apply border-b border-black
-
-    }
+	.blog-content {
+		@apply border-b border-black
+		
+	}
 }

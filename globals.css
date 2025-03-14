@@ -615,6 +615,13 @@ button:hover {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@media (min-width: 1024px) {
+  .my-photo {
+    height: 15rem;
+    width: 15rem;
+  }
+}
+
 .container {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -638,7 +645,8 @@ button:hover {
 
 @media (min-width: 1024px) {
   .portfolio {
-    width: 50%;
+    height: auto;
+    width: 75%;
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
@@ -725,6 +733,10 @@ button:hover {
   height: 100%;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .w-100 {
   width: 10rem;
 }
@@ -769,6 +781,14 @@ button:hover {
   justify-content: space-between;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .gap-6 {
   gap: 1.5rem;
 }
@@ -785,6 +805,11 @@ button:hover {
 .bg-\[\#18171f\] {
   --tw-bg-opacity: 1;
   background-color: rgb(24 23 31 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#d0e1f9\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(208 225 249 / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -811,12 +836,20 @@ button:hover {
   padding: 0px;
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .py-5 {
@@ -829,12 +862,44 @@ button:hover {
   padding-bottom: 2rem;
 }
 
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.px-40 {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pb-6 {
   padding-bottom: 1.5rem;
 }
 
+.pl-14 {
+  padding-left: 3.5rem;
+}
+
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
+.pb-9 {
+  padding-bottom: 2.25rem;
 }
 
 .text-left {
@@ -845,14 +910,13 @@ button:hover {
   text-align: center;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .text-xl {
@@ -860,8 +924,17 @@ button:hover {
   line-height: 1.75rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .text-blue-700 {
@@ -906,7 +979,45 @@ button:hover {
     flex-direction: row;
   }
 
+  .lg\:p-24 {
+    padding: 6rem;
+  }
+
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .lg\:pl-64 {
+    padding-left: 16rem;
+  }
+
   .lg\:text-left {
     text-align: left;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .lg\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }

@@ -27,6 +27,15 @@ body::before {
 	z-index: -1; /* Pastikan tetap di belakang */
 }
 
+.navbar {
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.2); /* Light translucent white */
+	backdrop-filter: blur(10px); /* Blurry glass effect */
+	padding: 10px 20px;
+	width: 100%;
+	position: fixed;
+}
+
 .border-gradient {
 	border-image: linear-gradient(
 			to right,
@@ -62,10 +71,8 @@ body::before {
 }
 
 .typed-container {
-	width: 420px;
+	width: 100%;
 	margin: 0 auto;
-	/* Center the container on the page */
-	padding: 20px;
 }
 
 .rotate-340 {
@@ -75,10 +82,11 @@ body::before {
 /* trying to implement hello text bubble on hover */
 #say-hello {
 	position: absolute;
-	top: 10%; /* Position below the trigger element */
-	right: 54%;
+	top: 0.5%; /* Position below the trigger element */
+	right: 55%;
 	visibility: hidden;
 	opacity: 0;
+	width: 20rem;
 	transition: opacity 0.5s ease; /* Optional: Add a smooth transition effect */
 }
 
@@ -92,10 +100,25 @@ body::before {
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
+textarea {
+	width: 100%; /* Makes it responsive */
+	max-width: 600px; /* Sets a reasonable max width */
+	height: 120px; /* Default height */
+}
+
+@media (min-width: 1024px) {
+	/* Adjusts for desktop */
+	textarea {
+		height: 200px;
+		max-width: 800px;
+	}
+}
+
 @media only screen and (max-width: 600px) {
 	#say-hello {
 		/* New position for mobile */
 		top: 10%;
 		right: 60%;
+		width: 15rem;
 	}
 }
