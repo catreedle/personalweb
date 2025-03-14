@@ -81,7 +81,7 @@ function sendEmail(event) {
 	}
 
 	let subject = "sent via purnamadev";
-	let recipient = "purnamasrahayu@gmial.com";
+	let recipient = "purnamasrahayu@gmail.com";
 
 	window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(
 		subject
