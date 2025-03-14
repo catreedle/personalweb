@@ -171,7 +171,8 @@
 				<h2 class="font-poppins text-center text-2xl font-bold">
 					Contact
 				</h2>
-				<section
+				<form
+					onsubmit="sendEmail(event)"
 					class="blog py-8 flex justify-center flex-col items-center"
 				>
 					<textarea
@@ -181,9 +182,10 @@
 						rows="5"
 						placeholder="Write to me"
 						class="p-2 border-blue-400 border-4"
+						required
 					></textarea>
-					<button class="w-80 my-8">Send</button>
-				</section>
+					<button class="w-80 my-8 bg-blue-400" type="submit">Send</button>
+				</form>
 
 				<section
 					id="social-media"
